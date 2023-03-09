@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x, y, w, h;
+	int answer;
+	cin >> x >> y >> w >> h;
+
+	answer = x;
+	if (w - x < answer)
+		answer = w - x;
+	if (y < answer)
+		answer = y;
+	if (h - y < answer)
+		answer = h - y;
+
+	cout << answer << '\n';
+}
